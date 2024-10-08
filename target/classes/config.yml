@@ -1,0 +1,79 @@
+# เปอร์เซ็นต์การสูญเสียเงินตามระดับดาว (1-5 ดาว)
+loss_percentages:
+  1: 5.0
+  2: 10.0
+  3: 15.0
+  4: 20.0
+  5: 25.0
+
+# เวลาคูลดาวน์ (เป็นวินาที) หลังจากที่เพิ่มดาว (1-5 ดาว)
+cooldown_times:
+  1: 60
+  2: 120
+  3: 180
+  4: 240
+  5: 300
+
+# จำนวนการฆ่าที่ต้องใช้เพื่อเพิ่มระดับดาว
+kill_thresholds:
+  star_1: 5
+  star_2: 10
+  star_3: 15
+  star_4: 20
+  star_5: 25
+
+# โอกาสในการเพิ่มดาวหลังจากถึงเกณฑ์การฆ่า (เป็นเปอร์เซ็นต์)
+chance_to_gain_star:
+  star_1: 100
+  star_2: 80
+  star_3: 60
+  star_4: 40
+  star_5: 20
+
+# โอกาสในการเกิดม็อบตามระดับดาว (เป็นเปอร์เซ็นต์)
+mob_spawn_chances:
+  star_1: 30
+  star_2: 40
+  star_3: 50
+  star_4: 60
+  star_5: 70
+
+mob_star_gain_chance:
+  star_1: 10  # โอกาสได้รับดาวระดับ 1 (ในเปอร์เซ็นต์)
+  star_2: 20  # โอกาสได้รับดาวระดับ 2
+  star_3: 30  # โอกาสได้รับดาวระดับ 3
+  star_4: 40  # โอกาสได้รับดาวระดับ 4
+  star_5: 50  # โอกาสได้รับดาวระดับ 5
+
+player_kill_star_gain_chance:
+  star_1: 15  # โอกาสได้รับดาวระดับ 1 จากการฆ่าผู้เล่น
+  star_2: 25  # โอกาสได้รับดาวระดับ 2 จากการฆ่าผู้เล่น
+  star_3: 35
+  star_4: 45
+  star_5: 55
+# ข้อความที่แสดงในเกม
+
+mysticmobs_spawn:
+  star_1: 2  # จำนวน Policeman ที่จะ spawn เมื่อผู้เล่นมี 1 ดาว
+  star_2: 3  # จำนวน Policeman ที่จะ spawn เมื่อผู้เล่นมี 2 ดาว
+  star_3: 4
+  star_4: 5
+  star_5: 6
+
+messages:
+  star_level_up: ""
+  suicide_loss: ""
+  not_enough_money: ""
+  added_stars: ""
+  cleared_stars: ""
+  no_permission: "§cคุณไม่มีสิทธิ์ใช้คำสั่งนี้"
+  usage: "§cใช้งาน: /wanted [add|set|clear|cooldown] <player> <amount>"
+  set_usage: "§cใช้งาน: /wanted [add|set] <player> <amount>"
+  invalid_amount: "§cจำนวนที่ไม่ถูกต้อง! ระบุจำนวนระหว่าง 0 ถึง 5"
+  not_a_number: "§cโปรดระบุจำนวนที่เป็นตัวเลข"
+  player_offline: "§cผู้เล่นนี้ไม่ได้อยู่ในเกม"
+  only_players: "§cคำสั่งนี้สามารถใช้ได้เฉพาะผู้เล่นเท่านั้น"
+  cooldown_active: "§cผู้เล่น §e%s §cอยู่ในช่วงคูลดาวน์: §e%d วินาที"
+  cooldown_left: "§aผู้เล่น §e%s §aเหลือคูลดาวน์อีก §e%d วินาที"
+  no_cooldown: "§aผู้เล่น §e%s §aไม่มีคูลดาวน์ในขณะนี้"
+  star_reset_on_death: ""

@@ -1,0 +1,16 @@
+name: Wantedlevel
+version: '1.0-SNAPSHOT'
+main: me.patiphan.wanted.wantedlevel.StarSystem
+api-version: '1.19'
+depend: [Vault, PlaceholderAPI]
+softdepend: [WorldGuard, MythicMobs]
+commands:
+  wanted:
+    description: "จัดการระดับ Stars ของผู้เล่น"
+    usage: "/wanted <set|add|clear> <player> [amount]"
+    permission: "Wanted.*"
+    permission-message: "§cคุณไม่มีสิทธิ์ใช้คำสั่งนี้"
+permissions:
+  Wanted.*:
+    description: "อนุญาตให้ใช้งานทุกคำสั่งที่เกี่ยวข้องกับระบบ Wanted"
+    default: op
